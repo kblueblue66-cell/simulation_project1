@@ -42,6 +42,10 @@ class User extends Authenticatable implements MustVerifyEmail
     {
         return $this->belongsToMany(Item::class,'likes','user_id','item_id')->withTimestamps();
     }
+    /**
+     * 更新用タイムスタンプのカラム名を仕様に合わせてカスタマイズ
+     */
+    const UPDATED_AT = 'update_at';
 
     /**
      * The attributes that should be hidden for serialization.

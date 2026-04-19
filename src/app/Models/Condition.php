@@ -13,4 +13,8 @@ class Condition extends Model
 
     public function items() { return $this->hasMany(Item::class); }
 
+    /**
+     * 更新用タイムスタンプのカラム名を仕様に合わせてカスタマイズ
+     */
+    const UPDATED_AT = 'update_at';
 }

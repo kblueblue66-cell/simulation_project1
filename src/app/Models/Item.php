@@ -38,5 +38,9 @@ class Item extends Model
         // すでにこのユーザーのIDがlikesテーブルに存在するかチェック
         return $this->likes()->where('user_id', $user->id)->exists();
     }
+    /**
+     * 更新用タイムスタンプのカラム名を仕様に合わせてカスタマイズ
+     */
+    const UPDATED_AT = 'update_at';
 }
 

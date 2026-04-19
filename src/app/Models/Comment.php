@@ -13,4 +13,8 @@ class Comment extends Model
     public function user() { return $this->belongsTo(User::class); }
     public function item() { return $this->belongsTo(Item::class); }
 
+    /**
+     * 更新用タイムスタンプのカラム名を仕様に合わせてカスタマイズ
+     */
+    const UPDATED_AT = 'update_at';
 }

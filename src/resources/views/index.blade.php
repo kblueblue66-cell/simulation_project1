@@ -25,7 +25,7 @@
                 <a href="{{ route('item.show', ['item_id' => $item->id]) }}">
                     <div class="product-image-wrapper">
                         {{-- 商品画像: 商品データ一覧 [3] に基づくURL --}}
-                        <img src="{{ asset('storage/' .$item->image_url) }}" alt="{{ $item->name }}">
+                        <img src="{{ $item->image_url }}" alt="{{ $item->name }}">
 
                         {{-- Soldラベル: FN014 購入済み商品の表示 --}}
                         @if($item->isSold())

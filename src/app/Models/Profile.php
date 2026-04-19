@@ -14,4 +14,9 @@ class Profile extends Model
     ];
 
     public function user() { return $this->belongsTo(User::class); }
+
+    /**
+     * 更新用タイムスタンプのカラム名を仕様に合わせてカスタマイズ
+     */
+    const UPDATED_AT = 'update_at';
 }
