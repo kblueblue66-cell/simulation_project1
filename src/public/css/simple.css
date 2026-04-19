@@ -1,0 +1,55 @@
+.simple-header {
+    background-color: #000;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.header-inner {
+    width: 100%;
+    max-width: 1540px;
+    margin: 0 auto;
+}
+
+.header-logo img {
+    height: 30px;
+    display: block;
+}
+
+/* メインコンテンツエリア */
+.simple-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 60px);
+    padding: 20px;
+}
+
+.content-wrapper {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* 認証画面共通のボタン・テキストスタイル (ソース [1] 参照) */
+.btn-primary {
+    background-color: #ff5555;
+    /* コーチテックカラー */
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.link-secondary {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    margin-top: 20px;
+}

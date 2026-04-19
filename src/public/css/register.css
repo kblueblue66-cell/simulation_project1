@@ -1,0 +1,84 @@
+/* --- 会員登録コンテナ --- */
+.register-container {
+    width: 100%;
+    max-width: 450px;
+    /* スクリーンショット [1] のフォーム幅を再現 */
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+/* タイトル: 会員登録 [1] */
+.register-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* --- フォームグループ --- */
+.form-group {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    /* スクリーンショット [1] の太字ラベル */
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    /* パディングを含めた幅計算 */
+    font-size: 16px;
+}
+
+/* エラーメッセージ (FN004: 指定の文言を表示する用) [3] */
+.error-message {
+    color: #ff5555;
+    /* コーチテックのアクセントカラー */
+    font-size: 14px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+/* --- ボタンとリンク --- */
+.btn-register {
+    width: 100%;
+    background-color: #ff4b4b;
+    /* ブランドカラー [1, 4, 5] */
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+.btn-register:hover {
+    background-color: #ff3333;
+}
+
+/* ログインはこちらリンク [10: FN005] */
+.login-link {
+    display: block;
+    text-align: center;
+    margin-top: 25px;
+    color: #007bff;
+    /* リンクの青色 */
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.login-link:hover {
+    text-decoration: underline;
+}

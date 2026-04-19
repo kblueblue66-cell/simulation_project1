@@ -1,0 +1,82 @@
+/* --- ログインコンテナ --- */
+.login-container {
+    width: 100%;
+    max-width: 450px;
+    /* スクリーンショット [1] のバランスを再現 */
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+/* タイトル: ログイン */
+.login-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* --- フォームグループ --- */
+.form-group {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    /* スクリーンショット [1] の太字ラベル */
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* エラーメッセージ (FN010: 指定の文言を表示) */
+.error-message {
+    color: #ff5555;
+    font-size: 14px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+/* --- ボタンとリンク --- */
+/* ログインボタン: スクリーンショット [1] の赤色 */
+.btn-login {
+    width: 100%;
+    background-color: #ff4b4b;
+    /* コーチテックのアクセントカラー */
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+.btn-login:hover {
+    background-color: #ff3333;
+}
+
+/* 会員登録はこちらリンク [13: FN011] */
+.register-link {
+    display: block;
+    text-align: center;
+    margin-top: 25px;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.register-link:hover {
+    text-decoration: underline;
+}

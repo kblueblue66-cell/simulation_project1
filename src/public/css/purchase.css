@@ -1,0 +1,84 @@
+.purchase-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    display: flex;
+    gap: 100px;
+    padding: 0 20px;
+}
+
+.purchase-main {
+    flex: 2;
+}
+
+/* 商品情報エリア */
+.item-summary {
+    display: flex;
+    gap: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #333;
+}
+
+.item-image img {
+    width: 150px;
+    height: 150px;
+    background-color: #f5f5f5;
+    object-fit: contain;
+}
+
+/* 各セクションのスタイル */
+.selection-section {
+    margin-top: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #333;
+}
+
+.selection-section h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.change-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* 右側：確認用カード */
+.purchase-confirm {
+    flex: 1;
+    border: 1px solid #333;
+    padding: 20px;
+    height: fit-content;
+}
+
+.confirm-table {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.confirm-table th,
+.confirm-table td {
+    padding: 10px 0;
+}
+
+.confirm-table td {
+    text-align: right;
+}
+
+/* 購入ボタン */
+.purchase-btn {
+    width: 100%;
+    background-color: #ff5555;
+    /* スクリーンショットの赤色 [1] */
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}

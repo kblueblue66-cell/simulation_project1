@@ -1,0 +1,90 @@
+/* アプリ共通の変数定義 */
+:root {
+    --brand-red: #ff5555;
+    /* 出品・購入・更新ボタンに使用 [3, 4] */
+    --text-black: #333333;
+    --border-gray: #ccc;
+    /* 入力フォームの枠線 [5, 6] */
+    --bg-white: #ffffff;
+}
+
+.address-container {
+    max-width: 600px;
+    /* プロフィール編集画面 [5] に合わせたサイズ感 */
+    margin: 60px auto;
+    padding: 0 20px;
+    color: var(--text-black);
+}
+
+.address-container h1 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* フォームグループのスタイル */
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+/* 入力フィールド：会員登録やログイン画面 [6, 7] と共通の記法 */
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-gray);
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+    /* パディングを含めた幅計算 */
+}
+
+/* バリデーションエラーメッセージ [13: FN004] */
+.error-msg {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+/* 更新ボタン：商品出品画面 [3] や購入画面 [4] の「赤ボタン」を再現 */
+.update-btn {
+    width: 100%;
+    background-color: var(--brand-red);
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: opacity 0.2s;
+}
+
+.update-btn:hover {
+    opacity: 0.8;
+}
+
+.error-msg {
+    color: #ff5555;
+    /* ソースのボタン色に近い赤色 */
+    font-size: 14px;
+    margin-top: 5px;
+    font-weight: bold;
+    /* メッセージを強調する場合 */
+}
+
+/* レスポンシブ対応 [11: ID 2] */
+@media (max-width: 768px) {
+    .address-container {
+        margin: 30px auto;
+    }
+}

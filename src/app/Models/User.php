@@ -7,8 +7,10 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
-class User extends Authenticatable
+
+class User extends Authenticatable implements MustVerifyEmail
 {
     use HasApiTokens, HasFactory, Notifiable;
 
@@ -22,6 +24,24 @@ class User extends Authenticatable
         'email',
         'password',
     ];
+    public function profile(){return $this->hasOne(Profile::class);}
+
+    public function items(){return $this->hasMany(Item::class);}
+
+    public function orders(){return $this->hasMany(Order::class);}
+
+    public function orderedItems(){
+        return $this->belongsToMany(Item::class,'orders','user_id','item_id');
+    }
+
+    public function likes(){return $this->hasMany(Like::class);}
+
+    public function comments(){return $this->hasMany(Comment::class);}
+
+    public function likedItems():BelongsToMany
+    {
+        return $this->belongsToMany(Item::class,'likes','user_id','item_id')->withTimestamps();
+    }
 
     /**
      * The attributes that should be hidden for serialization.

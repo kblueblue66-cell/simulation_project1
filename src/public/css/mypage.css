@@ -1,0 +1,110 @@
+.mypage-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* ユーザーヘッダー */
+.profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.user-avatar,
+.avatar-placeholder {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    overflow: hidden;
+}
+
+.user-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.user-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.edit-profile-btn {
+    border: 2px solid #ff5555;
+    color: #ff5555;
+    padding: 8px 24px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* タブデザイン [1] */
+.tabs {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 30px;
+}
+
+.tab-item {
+    padding: 10px 30px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.tab-item.active {
+    color: #ff5555;
+    border-bottom: 2px solid #ff5555;
+}
+
+/* 商品一覧グリッド */
+.item-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.item-image {
+    position: relative;
+    aspect-ratio: 1/1;
+}
+
+.item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item-name {
+    margin-top: 10px;
+    color: #333;
+}
+.sold-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 60px solid #ff5555;
+    /* 赤いラベル */
+    border-right: 60px solid transparent;
+}
+.sold-label::before {
+    content: "Sold";
+    position: absolute;
+    top: -55px;
+    left: 5px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    transform: rotate(-45deg);
+}

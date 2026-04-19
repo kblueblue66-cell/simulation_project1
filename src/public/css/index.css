@@ -1,0 +1,94 @@
+/* --- タブメニュー (ソース [3] に基づく) --- */
+.tab-container {
+    border-bottom: 1px solid #ccc;
+    margin-top: 20px;
+    padding: 0 50px;
+}
+
+.tab-menu {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tab-item a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+/* アクティブなタブ（赤文字＋下線） [3] */
+.tab-item.active a {
+    color: #ff5555;
+    border-bottom: 3px solid #ff5555;
+}
+
+/* --- 商品グリッド (デザイン要件 [7: ID 2] に基づく) --- */
+.container {
+    max-width: 1540px;
+    /* 1540pxまで対応 */
+    margin: 0 auto;
+    padding: 40px 50px;
+}
+
+.product-grid {
+    display: grid;
+    /* スクリーンショット [3] に基づき4カラム構成 */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px 20px;
+}
+
+/* --- 商品カード & Soldラベル (ソース [9: FN014]) --- */
+.product-card {
+    text-decoration: none;
+    color: #333;
+}
+
+.product-image-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-color: #d9d9d9;
+    /* プレースホルダー色 [3] */
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.product-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 購入済み商品の "Sold" 表示 [9: FN014, 13: ID 4] */
+.sold-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 60px solid #ff5555;
+    /* 赤いラベル */
+    border-right: 60px solid transparent;
+}
+
+.sold-label::before {
+    content: "Sold";
+    position: absolute;
+    top: -55px;
+    left: 5px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    transform: rotate(-45deg);
+}
+
+.product-name {
+    margin-top: 10px;
+    font-size: 16px;
+    display: block;
+}

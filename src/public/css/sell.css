@@ -1,0 +1,120 @@
+.sell-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.form-section {
+    margin-bottom: 50px;
+}
+
+.section-title {
+    font-size: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    color: #555;
+}
+
+.section-label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* 画像アップロードボックス [1] */
+.image-upload-box {
+    border: 1px dashed #ccc;
+    padding: 60px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.upload-label {
+    color: #ff5555;
+    border: 1px solid #ff5555;
+    padding: 8px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.hidden-input {
+    display: none;
+}
+
+/* カテゴリータグ [1] */
+.category-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.category-tag input {
+    display: none;
+}
+
+.tag-label {
+    display: inline-block;
+    padding: 6px 15px;
+    border: 1px solid #ff5555;
+    color: #ff5555;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.category-tag input:checked+.tag-label {
+    background-color: #ff5555;
+    color: white;
+}
+
+/* 入力フィールド共通 */
+.form-input,
+.form-select,
+.form-textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.price-input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.currency-symbol {
+    margin-right: 10px;
+    font-weight: bold;
+}
+/* エラーメッセージのスタイル */
+.error-msg {
+    color: #ff4d4b;
+    font-size: 0.85rem;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+/* 出品ボタン [1] */
+.submit-btn {
+    width: 100%;
+    background-color: #ff5555;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}

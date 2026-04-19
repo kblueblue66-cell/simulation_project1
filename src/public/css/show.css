@@ -1,0 +1,222 @@
+/* 全体のレイアウト設計 [15: ID 2] */
+.item-detail-wrapper {
+    display: flex;
+    max-width: 1200px;
+    margin: 40px auto;
+    gap: 80px;
+}
+
+/* 左側：画像エリア */
+.item-image-container {
+    flex: 1;
+}
+
+.item-image-container img {
+    max-width: 100%;
+    height: auto;
+}
+.image-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.image-wrapper img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Soldラベル本体 [18: FN014-3, 22: ID 4] */
+.sold-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 60px solid #ff4b4b;
+    border-right: 60px solid transparent;
+    z-index: 10;
+}
+
+/* ラベル内の"Sold"テキスト */
+.sold-label::before {
+    content: "Sold";
+    position: absolute;
+    top: -55px;
+    left: 5px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    transform: rotate(-45deg);
+    display: block;
+}
+/* 右側：情報エリア */
+.item-info-container {
+    flex: 1;
+}
+
+.item-name {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.brand-name {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.tax-label {
+    font-size: 14px;
+    font-weight: normal;
+    margin-left: 5px;
+}
+
+/* 統計アイコンの縦並びセット [17: FN018] */
+.stats-area {
+    display: flex;
+    gap: 40px;
+    margin-left: 20px;
+    margin-bottom: 25px;
+}
+
+.stat-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40px;
+}
+
+.stat-icon {
+    width: 30px;
+    height: auto;
+}
+
+.stat-count {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.stat-icon-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+}
+
+/* 購入・送信ボタン共通 [15: ID 1] */
+.primary-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #ff5555;
+    /* 要件の赤色 */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+.primary-btn.sold-out {
+    background-color: #888;
+}
+
+/* セクションの見出しと太い境界線 [1] */
+.section-title {
+    font-size: 22px;
+    font-weight: bold;
+    /* 画像にある太い黒線 */
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.description-text {
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+/* 商品情報（カテゴリ・状態） */
+.info-row {
+    display: flex;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.label {
+    width: 140px;
+    font-weight: bold;
+}
+
+/* カテゴリタグのバッジスタイル [17: FN017-2] */
+.tag-list {
+    display: flex;
+    gap: 10px;
+}
+
+.category-tag {
+    background-color: #e0e0e0;
+    padding: 3px 15px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+/* コメント欄 [9, 17: FN017-11] */
+.comment-item {
+    margin-bottom: 30px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.avatar img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #d9d9d9;
+}
+
+.user-name {
+    font-weight: bold;
+}
+
+.comment-bubble {
+    background-color: #eeeeee;
+    /* 薄いグレーの背景 */
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    position: relative;
+}
+
+/* コメント入力エリア */
+.sub-title {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.comment-input {
+    width: 100%;
+    height: 150px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
