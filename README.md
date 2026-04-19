@@ -132,8 +132,7 @@ php artisan test
 <img width="757" height="105" alt="スクリーンショット 2026-04-19 13 20 04" src="https://github.com/user-attachments/assets/40dfac2e-4f96-46c9-b181-e6136f0bfd28" />
 
 ## ER図
-<img width="558" height="308" alt="スクリーンショット 2026-04-19 13 14 08" src="https://github.com/user-attachments/assets/8d22ed7b-9c11-457f-86aa-c25b21c20d32" />
-
+<img width="545" height="319" alt="スクリーンショット 2026-04-19 13 35 00" src="https://github.com/user-attachments/assets/879e7d8b-dadf-4058-9510-6cb2a889c54e" />
 
 ## URL
 - 開発環境：http://localhost/
