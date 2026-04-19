@@ -22,7 +22,7 @@ class CreateOrdersTable extends Migration
             $table->string('building', 255)->nullable();
             $table->timestamp('payment_method');
             $table->timestamp('created_at')->nullable();
-            $table->timestamp('update_at')->nullable();
+            $table->timestamp('updated_at')->nullable();
         });
     }
 

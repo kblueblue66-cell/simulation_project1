@@ -12,9 +12,4 @@ class Comment extends Model
     protected $fillable = ['user_id', 'item_id', 'content'];
     public function user() { return $this->belongsTo(User::class); }
     public function item() { return $this->belongsTo(Item::class); }
-
-    /**
-     * 更新用タイムスタンプのカラム名を仕様に合わせてカスタマイズ
-     */
-    const UPDATED_AT = 'update_at';
 }

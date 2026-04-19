@@ -19,7 +19,7 @@ class CreateCommentsTable extends Migration
             $table->foreignId('item_id')->constrained('items')->onDelete('cascade');
             $table->string('content', 255);
             $table->timestamp('created_at')->nullable();
-            $table->timestamp('update_at')->nullable();
+            $table->timestamp('updated_at')->nullable();
         });
     }
 

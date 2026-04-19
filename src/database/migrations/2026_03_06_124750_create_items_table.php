@@ -23,7 +23,7 @@ class CreateItemsTable extends Migration
             $table->string('description', 255);
             $table->string('image_url', 255);
             $table->timestamp('created_at')->nullable();
-            $table->timestamp('update_at')->nullable();
+            $table->timestamp('updated_at')->nullable();
         });
     }
 
